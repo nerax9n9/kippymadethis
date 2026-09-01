@@ -18,7 +18,6 @@ let popularityData = {};
 const featuredContainer = document.getElementById('featuredZones');
 async function listZones() {
    zonesURL = "./zones.json";
-        }
         const response = await fetch(zonesURL+"?t="+Date.now());
         const json = await response.json();
         zones = json;
