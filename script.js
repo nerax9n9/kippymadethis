@@ -79,10 +79,6 @@ async function listZones() {
                 }
             }
         }
-    } catch (error) {
-        console.error(error);
-        container.innerHTML = `Error loading zones: ${error}`;
-    }
 }
 async function fetchPopularity() {
     try {
