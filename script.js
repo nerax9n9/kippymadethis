@@ -37,7 +37,7 @@ async function listZones() {
                 if (secondarysharesponse && secondarysharesponse.status === 200) {
                     sha = (await secondarysharesponse.text()).trim();
                     if (sha) {
-                        zonesURL = `https://cdn.jsdelivr.net/gh/gn-math/assets@${sha}/zones.json`;
+                        zonesURL = "./zones.json";
                     }
                 }
             } catch(error) {}
