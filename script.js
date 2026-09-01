@@ -120,7 +120,7 @@ function displayFeaturedZones(featuredZones) {
         zoneItem.className = "zone-item";
         zoneItem.onclick = () => openZone(file);
         const img = document.createElement("img");
-        img.dataset.src = file.cover.replace("{COVER_URL}", coverURL).replace("{HTML_URL}", htmlURL);
+        img.dataset.src = file.cover ? file.cover.replace("{COVER_URL}", coverURL).replace("{HTML_URL}", htmlURL) : "";
         img.alt = file.name;
         img.loading = "lazy";
         img.className = "lazy-zone-img";
